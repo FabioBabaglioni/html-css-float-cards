@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* regole generali body */
 body{
     font-family: 'Fredoka', sans-serif;
@@ -19,8 +23,12 @@ body{
 /* regole header */
 header{
     height: 150px;
-    /* DEBUG */
-    background-color: blue;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    color: palevioletred;
+    padding-top: 30px;
+    
 }
 
 /* regole main */
@@ -34,7 +42,8 @@ main{
 
 /* regole griglia */
 .row{
-    ;
+    margin-left: -10px;
+    margin-right: -10px;
     /* DEBUG */
     /* min-height: 100px;
     background-color: blueviolet; */
@@ -43,12 +52,13 @@ main{
 .col{
     float: left;
     width: calc(100% / 3 - 20px);
+    height: 100px;
     border: solid 2px black;
-    margin: 20px 10px ;
-
+    margin: 10px ;
+    background-color: black;
+    
         /* DEBUG */
-    min-height: 100px;
-    background-color: blueviolet;
+    
+    
 }
-
 
