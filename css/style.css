@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
-}
 
 /* regole generali body */
 body{
@@ -22,44 +19,61 @@ body{
 
 /* regole header */
 header{
-    height: 100px;
-    font-size: 30px;
-    margin: auto;
+    font-size: 18px;
     text-align: center;
-    color: palevioletred;
-    padding-top: 30px;
-    
+    color: rgb(228, 67, 124);
+    padding: 30px;
 }
 
 /* regole main */
-main{
-    margin: 30px 0;
-}
 
 .intro{
     text-align: center;
-    padding: 20px;
+    padding-bottom: 15px;
+    
 }
 
 /* regole griglia */
 .row{
     margin-left: -10px;
     margin-right: -10px;
-    /* DEBUG */
-    /* min-height: 100px;
-    background-color: blueviolet; */
+   
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .col{
     float: left;
     width: calc(100% / 3 - 20px);
     height: 100px;
-    border: solid 2px black;
     margin: 10px ;
     background-color: black;
-    
-        /* DEBUG */
-    
-    
 }
 
+
+img{
+    max-width: 100px;
+    margin-right: 10px;
+    float: left;
+}
+
+.name{
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.professione{
+    color: white;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+
+}
